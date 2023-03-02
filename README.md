@@ -15,6 +15,8 @@ To get started with this application, follow these steps:
 * Make any necessary changes to the application.properties file to customize the task execution times.
 * Run the application.
 
+
+
 ## Dependencies
 > This application has the following dependencies:
 
@@ -22,7 +24,18 @@ To get started with this application, follow these steps:
 * Spring Boot Starter Test
 * Spring Boot Starter Validation
 
-> These dependencies are defined in the build.gradle file.
+> These dependencies are defined in the pom.xml file.
+
+## Configuration
+> The application.properties file contains the following crone expressions that define the times at which the reminder tasks are executed:
+
+* noon.time=0 0 12 * * ?
+* morningten15.time=0 15 10 ? * *
+* morningten30.time=0 30 10 ? * *
+
+> For more information on crone expressions, see [this](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm) article.
+
 
 ## Contributing
 > If you'd like to contribute to this project, please fork the repository and submit a pull request. Contributions are always welcome!
+
